@@ -7,7 +7,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class MyMap<K, V> implements Map<K, V> {
+/**
+ * @Description: 一个key值可以重复的map
+ * @author: lmh
+ * @version 1.0
+ * @date: 2017年4月25日
+ */
+public class RepeatableKeyMap<K, V> implements Map<K, V> {
 	private List<K> keys = new ArrayList<K>();
 	private List<V> values = new ArrayList<V>();
 

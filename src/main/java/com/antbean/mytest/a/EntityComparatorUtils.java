@@ -21,7 +21,7 @@ public class EntityComparatorUtils {
 		if (!tClass.equals(otherClass)) {
 			throw new IllegalArgumentException("类型不匹配");
 		}
-		Map<String, String> names = new MyMap<String, String>();
+		Map<String, String> names = new RepeatableKeyMap<String, String>();
 		Field[] fields = tClass.getDeclaredFields();
 		for (Field filed : fields) {
 			FieldDesc fieldDesc = filed.getAnnotation(FieldDesc.class);
